@@ -255,9 +255,9 @@ b {
     color: var(--color-primary);
 }
 
-.container .nav-toggle-btn{
+.container .nav-toggle-btn {
     background: white !important;
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 0.7rem;
     box-shadow: -2px 2px 6px #00000059;
     border-radius: 15px;
     font-family: var(--subHeading-font);
@@ -266,8 +266,8 @@ b {
 
 .theme-btn {
     position: relative;
-    padding: 4px;
-    width: 48px;
+    padding: 2px;
+    width: 43px;
     background: var(--switch-color);
     border-radius: 100px;
     transition: var(--transition-1);
@@ -293,8 +293,8 @@ b {
 .theme-btn .icon {
     position: absolute;
     left: 3px;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50px;
     background: white;
     transition: var(--transition-1);
@@ -417,9 +417,9 @@ b {
     display: none;
 }
 
-.navbar-actions {
+/* .navbar-actions {
     display: none;
-}
+} */
 
 @media (min-width: 550px) {
     .container {
@@ -433,6 +433,29 @@ b {
 
     .header .container {
         padding: 1rem 3rem;
+    }
+
+    .theme-btn {
+        position: relative;
+        padding: 4px;
+        width: 48px;
+        background: var(--switch-color);
+        border-radius: 100px;
+        transition: var(--transition-1);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .theme-btn .icon {
+        position: absolute;
+        left: 3px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        background: white;
+        transition: var(--transition-1);
     }
 
 }
@@ -1028,7 +1051,8 @@ b {
         font-size: 1.7rem;
     }
 
-    #gifters-tab, #vendors-tab {
+    #gifters-tab,
+    #vendors-tab {
         font-size: 1rem;
     }
 }
@@ -1177,14 +1201,14 @@ footer {
     padding: 3rem 6rem 0 6rem;
 }
 
-.footer-container b{
+.footer-container b {
     font-family: var(--b-font);
     font-weight: 400;
     font-size: 1.2rem;
     color: var(--color-primary);
 }
 
-.footer-container .logo{
+.footer-container .logo {
     margin-bottom: 3rem;
 }
 
@@ -1200,7 +1224,7 @@ footer .input-wrapper {
     background-color: white;
 }
 
-.input-wrapper img{
+.input-wrapper img {
     width: 30px;
 }
 
@@ -1242,12 +1266,12 @@ footer .input:-webkit-autofill {
     transition: all 0.3s;
 }
 
-.Subscribe-btn button{
+.Subscribe-btn button {
     padding: unset !important;
     color: white;
 }
 
-.Subscribe-btn i{
+.Subscribe-btn i {
     color: white;
 }
 
@@ -1302,7 +1326,7 @@ footer .input-wrapper:active .icon {
     transform: scale(0.9);
 }
 
-.footer-copyright{
+.footer-copyright {
     padding: 2rem 0;
     margin-top: 3rem;
     display: flex;
@@ -1311,17 +1335,17 @@ footer .input-wrapper:active .icon {
     border-top: 1px solid var(--color-primary);
 }
 
-.footer-copyright b{
+.footer-copyright b {
     color: var(--color-primary);
 }
 
-.footer-socials{
+.footer-socials {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
-.footer-socials img{
+.footer-socials img {
     width: 50px;
 }
 
@@ -1330,7 +1354,7 @@ footer .input-wrapper:active .icon {
         padding: 3rem 2rem 0 2rem;
     }
 
-    .footer-copyright{
+    .footer-copyright {
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
