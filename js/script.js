@@ -66,34 +66,38 @@ themeToggleBtn.addEventListener("click", function () {
 });
 
 // Apply last selected theme from localStorage
-if (localStorage.getItem("theme") === "light_theme") {
-  themeToggleBtn.classList.add("gifting-active");
-  document.body.classList.remove("dark_theme");
-  document.body.classList.add("light_theme");
-} else {
-  themeToggleBtn.classList.remove("gifting-active");
-  document.body.classList.remove("light_theme");
-  document.body.classList.add("dark_theme");
-}
-
 document.addEventListener("DOMContentLoaded", () => {
+  const themeToggleBtn = document.querySelector("[data-theme-btn]");
+
+  if (localStorage.getItem("theme") === "dark_theme") {
+    themeToggleBtn.classList.remove("active");
+    document.body.classList.remove("light_theme");
+    document.body.classList.add("dark_theme");
+  } else {
+    themeToggleBtn.classList.add("active");
+    document.body.classList.remove("dark_theme");
+    document.body.classList.add("light_theme");
+    localStorage.setItem("theme", "light_theme"); // Set default to light theme
+  }
+
   const giftersTab = document.getElementById("gifters-tab");
   const vendorsTab = document.getElementById("vendors-tab");
   const giftersSection = document.getElementById("gifters-section");
   const vendorsSection = document.getElementById("vendors-section");
 
   const toggleActiveTab = (activeTab, inactiveTab, activeSection, inactiveSection) => {
-      activeTab.classList.add("gifting-active");
-      inactiveTab.classList.remove("gifting-active");
-      activeSection.style.display = "flex";
-      inactiveSection.style.display = "none";
+    activeTab.classList.add("gifting-active");
+    inactiveTab.classList.remove("gifting-active");
+    activeSection.style.display = "flex";
+    inactiveSection.style.display = "none";
   };
 
+  // Add event listeners for tab switching
   giftersTab.addEventListener("click", () => {
-      toggleActiveTab(giftersTab, vendorsTab, giftersSection, vendorsSection);
+    toggleActiveTab(giftersTab, vendorsTab, giftersSection, vendorsSection);
   });
 
   vendorsTab.addEventListener("click", () => {
-      toggleActiveTab(vendorsTab, giftersTab, vendorsSection, giftersSection);
+    toggleActiveTab(vendorsTab, giftersTab, vendorsSection, giftersSection);
   });
 });
