@@ -5,14 +5,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mapia</title>
+    <title>maipa</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="shortcut icon" href="./assets//images/solar_gift-bold.svg" type="image/svg+xml" />
     <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon" /> Add this line for favicon -->
 
-
     <link rel="stylesheet" href="./css/style.css" />
+
+<!-- Open Graph meta tags -->
+    <meta property="og:title" content="Maipa - Celebrate Every Moment" />
+    <meta property="og:description" content="The ultimate app for celebrating life’s special moments. Effortlessly track events, send thoughtful gifts, and personalize your celebrations, all in one seamless experience." />
+    <meta property="og:image" content="https://res.cloudinary.com/dzmb0xyea/image/upload/v1732227597/PHOTO-2024-11-21-16-19-34_raz4ef.jpg" />
+    <meta property="og:url" content="https://maipa.com" />
+    <meta property="og:type" content="website" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,14 +28,46 @@
 </head>
 
 <body id="top" class="dark_theme">
-    <div class="banner-bg">
+    <div class="banner-bg" id="home">
 
         <header class="header" data-header>
             <div class="container">
                 <a class="logo" href="#">
                     <img src="./assets/images/solar_gift-bold.png" alt="">
-                    <h1>Mapia</h1>
+                    <h1>Maipa</h1>
                 </a>
+
+
+
+                <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+
+
+
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="#home" class="navbar-link">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#features" class="navbar-link">Features</a>
+                        </li>
+
+                        <li>
+                            <a href="#gifting" class="navbar-link">How It Works</a>
+                        </li>
+                    </ul>
+
+                    <a href="https://bit.ly/usemaipa">
+                        <button class="nav-button nav-button-sm">
+                            Join the Waitlist
+                        </button>
+                    </a>
+                </nav>
 
                 <div class="navbar-actions">
                     <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
@@ -39,35 +77,12 @@
                     </button>
                 </div>
 
-                <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
-                    <span class="one"></span>
-                    <span class="two"></span>
-                    <span class="three"></span>
-                </button>
-
-                <nav class="navbar" data-navbar>
-                    <ul class="navbar-list">
-                        <li>
-                            <a href="#home" class="navbar-link">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="#about" class="navbar-link">Features</a>
-                        </li>
-
-                        <li>
-                            <a href="#skills" class="navbar-link">How It Works</a>
-                        </li>
-                    </ul>
-
-                    <button class="nav-button nav-button-sm">
+                <a href="https://bit.ly/usemaipa" target="_blank">
+                    <button class="nav-button nav-button-lg">
                         Join the Waitlist
                     </button>
-                </nav>
+                </a>
 
-                <button class="nav-button nav-button-lg">
-                    Join the Waitlist
-                </button>
             </div>
         </header>
 
@@ -85,7 +100,7 @@
                     event,<br> send thoughtful gifts, and personalize your celebrations, all in one seamless <br>
                     experience.</p>
 
-                <a href="">
+                <a href="https://bit.ly/usemaipa" target="_blank">
                     <button class="banner-button">Join the Waitlist</button>
                 </a>
 
@@ -101,7 +116,7 @@
         <!-- <img src="./assets/images/Grid-5.png" alt="" data-banner-img> -->
     </div>
 
-    <section class="special">
+    <section class="special" id="features">
         <div class="special-container">
             <h1>
                 What makes Maipa special
@@ -171,7 +186,7 @@
 
     </section>
 
-    <section class="gifting">
+    <section class="gifting" id="gifting">
         <div class="gifting-container">
             <div class="gifting-select">
                 <div id="gifters-tab" class="gifting-active">For Gifters</div>
@@ -260,21 +275,21 @@
         </div>
     </section>
 
-    <section class="mapia-card">
-        <div class="mapia-card-box">
-            <div class="mapia-card-content">
+    <section class="maipa-card">
+        <div class="maipa-card-box">
+            <div class="maipa-card-content">
                 <img src="./assets/images/Group 331.png" alt="">
                 <h1>Unlock the joy of celebrations</h1>
                 <p>Maipa is almost here. Join the waitlist and be among the first to experience how easy it is to
                     celebrate every moment</p>
-                <a href="">
+                <a href="https://bit.ly/usemaipa">
                     <button>Join the Waitlist </button>
                     <i class='bx bx-right-arrow-alt'></i>
                 </a>
             </div>
-            <img class="mapia-card-box-img" src="./assets/images/Group 355.png" alt="">
+            <img class="maipa-card-box-img" src="./assets/images/Group 355.png" alt="">
 
-            <img class="mapia-card-box-img-sm" src="./assets/images/mockrocket-capture 5.png" alt="">
+            <img class="maipa-card-box-img-sm" src="./assets/images/mockrocket-capture 5.png" alt="">
         </div>
     </section>
 
@@ -282,7 +297,7 @@
         <div class="footer-container">
             <a class="logo" href="#">
                 <img src="./assets/images/solar_gift-bold.png" alt="">
-                <h1>Mapia</h1>
+                <h1>maipa</h1>
             </a>
 
             <b>Subscribe to our newsletter</b>
@@ -306,9 +321,17 @@
                     2024 Maipa. All Rights Reserved.</b>
 
                 <div class="footer-socials">
-                    <img src="./assets/images/Group 344.png" alt="">
-                    <img src="./assets/images/Group 343.png" alt="">
-                    <img src="./assets/images/Group 345.png" alt="">
+                    <a href="https://x.com/usemaipa77370">
+                        <img src="./assets/images/Group 344.png" alt="">
+                    </a>
+
+                    <a href="https://tiktok.com/@_usemaipa">
+                        <img src="./assets/images/Group 343.png" alt="">
+                    </a>
+
+                    <a href="https://instagram.com/usemaipa">
+                        <img src="./assets/images/Group 345.png" alt="">
+                    </a>
                 </div>
             </div>
 
