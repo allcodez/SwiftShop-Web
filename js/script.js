@@ -35,11 +35,24 @@ const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const navbar = document.querySelector("[data-navbar]");
 
 navToggleBtn.addEventListener("click", function () {
-
   elemToggleFunc(navToggleBtn);
   elemToggleFunc(navbar);
   elemToggleFunc(document.body);
+});
 
+/**
+ * Close navbar when a link is clicked
+ */
+const navbarLinks = document.querySelectorAll(".navbar-link");
+
+navbarLinks.forEach(link => {
+  link.addEventListener("click", function () {
+    if (navbar.classList.contains("active")) {
+      elemToggleFunc(navToggleBtn);
+      elemToggleFunc(navbar);
+      elemToggleFunc(document.body);
+    }
+  });
 });
 
 
