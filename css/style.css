@@ -6,13 +6,13 @@
 
 @font-face {
     font-family: PowerGrotesk-Regular;
-    src: url('../assets/fonts/Power-Grotesk-Regular/PowerGrotesk-Regular.otf'),
-        url('./assets/fonts/Power-Grotesk-Regular/PowerGrotesk-Regular.ttf')
+    src: url('../assets/fonts/Power-Grotesk/PowerGrotesk-Regular.otf'),
+        url('./assets/fonts/Power-Grotesk/PowerGrotesk-Regular.ttf')
 }
 
 @font-face {
     font-family: PowerGrotesk-Bold;
-    src: url(../assets/fonts/Power-Grotesk-Black-Ita/PowerGrotesk-UltraBold.ttf);
+    src: url(../assets/fonts/Power-Grotesk/PowerGroteskTrial-Bold.ttf);
 }
 
 :root {
