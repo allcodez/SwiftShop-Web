@@ -21,8 +21,8 @@
    * colors
    */
 
-    --brand-color: #F84C3B;
-    --brand-light: #FEDBD8;
+    --brand-color: #6654E7;
+    --brand-light: #D8FF80;
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
 
@@ -82,7 +82,7 @@ body.light_theme {
     --color-invert: #ffffff;
     --switch-color: #000000;
     --span-bg: #F1F1F1;
-    --brand-invert: #F84C3B;
+    --brand-invert: #6654E7;
     --footer-bg: #EFEFEF;
 
 
@@ -229,7 +229,8 @@ b {
 }
 
 .logo img {
-    height: 50px;
+    height: 40px;
+    margin: 3px 0;
 }
 
 .logo h1 {
@@ -399,7 +400,7 @@ b {
     left: 0;
     height: 5px;
     width: 0;
-    background: red;
+    background: var(--brand-color);
     transition: var(--transition-1);
 }
 
@@ -621,6 +622,7 @@ b {
 
 .banner-image {
     width: 80%;
+    margin-top: 2rem;
 }
 
 .floating-img1 {
@@ -725,7 +727,12 @@ b {
     }
 
     .logo img {
-        height: 40px;
+        height: 30px;
+    }
+
+    .container .nav-toggle-btn {
+        padding: 0.5em 0.4rem;
+        border-radius: 10px;
     }
 
     .banner-image {
@@ -802,7 +809,7 @@ b {
 
 .special-box-info-img {
     padding: 0.8rem;
-    background: var(--brand-light);
+    background: var(--brand-color);
     border-radius: 13px;
     align-self: flex-start;
 }
@@ -815,6 +822,10 @@ b {
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--color-primary);
+}
+
+.special-box-item p {
+    margin-top: 5px;
 
 }
 
@@ -856,6 +867,12 @@ b {
     }
 }
 
+@media (max-width: 865px) {
+    .special-container h1{
+        font-size: 2.5rem;
+    }
+}
+
 @media (max-width: 590px) {
     .special-container {
         padding: 3rem 2rem;
@@ -863,6 +880,11 @@ b {
 
     .special-container h1 {
         font-size: 1.7rem;
+        text-align: left;
+    }
+
+    .special-details {
+        text-align: left;
     }
 
     .special-box-item b {
@@ -962,9 +984,9 @@ b {
 
 .gifters-content-num {
     padding: 1rem 1.5rem;
-    color: var(--brand-invert);
+    color: var(--brand-light);
     border-radius: 10px;
-    background: var(--brand-light);
+    background: var(--brand-color);
     font-family: var(--heading-font);
     font-size: 1.4rem;
 }
@@ -1097,7 +1119,7 @@ b {
 }
 
 .maipa-card-content img {
-    width: 150px;
+    width: 170px;
 }
 
 .maipa-card-box-img {
@@ -1166,6 +1188,7 @@ b {
     .maipa-card-box-img-sm {
         display: block;
         width: 90%;
+        margin-top: 2rem;
     }
 
     .maipa-card-box {
@@ -1225,6 +1248,10 @@ footer {
 
 .footer-container .logo {
     margin-bottom: 3rem;
+}
+
+.footer-container .logo img{
+
 }
 
 footer .input-wrapper {
