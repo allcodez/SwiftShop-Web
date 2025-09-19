@@ -676,6 +676,10 @@ b {
     .banner-slogan {
         padding: 0.6rem;
     }
+
+    .banner-image {
+        margin-left: 3rem;
+    }
 }
 
 @media (max-width: 641px) {
@@ -693,6 +697,8 @@ b {
 
     .banner-image {
         width: 90%;
+        margin-left: 0;
+        margin-top: 0;
     }
 
     .banner {
@@ -736,7 +742,7 @@ b {
     }
 
     .banner-image {
-        width: 95%;
+        width: 98%;
     }
 
     .floating-img2,
@@ -841,6 +847,7 @@ b {
     .special-box-img {
         width: 80%;
         order: 2;
+        margin-top: 2rem;
     }
 
     .special-box-container:last-child {
@@ -868,7 +875,11 @@ b {
 }
 
 @media (max-width: 865px) {
-    .special-container h1{
+    .special-container{
+        margin-top: 0;
+    }
+
+    .special-container h1 {
         font-size: 2.5rem;
     }
 }
@@ -1023,7 +1034,7 @@ b {
 }
 
 .gifters-content {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -1064,7 +1075,7 @@ b {
     } */
 
     .gifters h1 {
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 }
 
@@ -1250,9 +1261,7 @@ footer {
     margin-bottom: 3rem;
 }
 
-.footer-container .logo img{
-
-}
+.footer-container .logo img {}
 
 footer .input-wrapper {
     width: fit-content;
@@ -1421,4 +1430,19 @@ footer .input-wrapper:active .icon {
     .Subscribe-btn {
         padding: 0.8rem;
     }
+}
+
+.footer-facebook {
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 20px;
+}
+
+.footer-facebook i {
+    color: #000000;
 }
